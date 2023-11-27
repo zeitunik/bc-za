@@ -45,7 +45,6 @@ repos:
           (?x)^(
             bc_za/events/migrations/.*.py
           )$
-        entry: flake8 --requirements-file=dev-requirements.txt
 
   - repo: https://github.com/PyCQA/isort
     rev: 5.12.0
