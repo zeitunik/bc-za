@@ -32,6 +32,7 @@ repos:
     hooks:
       - id: flake8
         additional_dependencies:
+          - flake8-pyproject
           - flake8-django
           - flake8-eradicate
           - flake8-print
@@ -44,7 +45,6 @@ repos:
           (?x)^(
             bc_za/events/migrations/.*.py
           )$
-        entry: flake8 --requirements-file=dev-requirements.txt
 
   - repo: https://github.com/PyCQA/isort
     rev: 5.12.0
