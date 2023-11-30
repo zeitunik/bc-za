@@ -4,6 +4,11 @@ dependencies = [
   "Django"
 ]
 
+[project.optional-dependencies]
+tests = [
+  "django-functest"
+]
+
 [tool.black]
 line-length = 120
 
