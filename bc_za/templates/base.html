@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'events/style.css' %}" type="text/css">
+  <title>{% block title %}Badminton Club Zürich-Affoltern{% endblock %}</title>
+</head>
+<body>
+  <div id="content" class="container">
+    <div class="row">
+      <div class="col">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>
