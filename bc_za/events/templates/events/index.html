@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Upcoming events</title>
+  </head>
+  <body>
+    <p>
+    <h1>Upcoming events</h1>
+        {% if upcoming_events %}
+            <ul>
+            {% for event in upcoming_events %}
+                <li><a href="/events/{{ event.id }}/">{{ event.name }}</a> {{ event.start }}</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No upcoming events to show.</p>
+        {% endif %}
+    </p>
+  </body>
+</html>
