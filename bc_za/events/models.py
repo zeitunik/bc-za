@@ -15,4 +15,10 @@ class Event(models.Model):
 
     def __str__(self) -> str:
         """Represent the event as a string."""
-        return str(self.name)
+        return (
+            f"{self.name}\nStart: "
+            + self.start.strftime("%d.%m.%y %H:%M")
+            + "\nEnd: "
+            + self.end.strftime("%d.%m.%y %H:%M")
+            + f"\nLocation: {self.location}\nSpots: {self.max_number_participants}"
+        )
