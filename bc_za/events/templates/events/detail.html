@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ event.name }}</title>
+</head>
+<body>
+    <p>
+        <h1>{{ event.name }}</h1>
+        <table>
+            <tr>
+                <td>Start</td>
+                <td>{{ event.start }}</td>
+            </tr>
+            <tr>
+                <td>End</td>
+                <td>{{ event.end }}</td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td>{{ event.location }}</td>
+            </tr>
+            <tr>
+                <td>Max Participants</td>
+                <td>{{ event.max_number_participants }}</td>
+            </tr>
+        </table>
+    </p>
+</body>
+</html>
